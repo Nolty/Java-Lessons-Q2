@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.MainController">
+    <Label fx:id="mainTextArea" alignment="TOP_CENTER" VBox.vgrow="ALWAYS" />
+    <HBox alignment="CENTER">
+        <Button text="Загрузить список животных" onAction="#loadAnimals"/>
+      <VBox.margin>
+         <Insets left="10.0" right="10.0" />
+      </VBox.margin>
+    </HBox>
+    <VBox alignment="TOP_CENTER">
+        <TextField fx:id="nameTextField" promptText="Кличка животного">
+            <VBox.margin>
+                <Insets bottom="10" top="10" />
+            </VBox.margin>
+        </TextField>
+
+        <TextField fx:id="colorTextField" promptText="Цвет животного">
+            <VBox.margin>
+                <Insets bottom="10" />
+            </VBox.margin>
+        </TextField>
+
+        <TextField fx:id="ageTextField" promptText="Возраст животного">
+            <VBox.margin>
+                <Insets bottom="10" />
+            </VBox.margin>
+        </TextField>
+
+        <TextField fx:id="jumpHeightTextField" promptText="Высота прыжка">
+            <VBox.margin>
+                <Insets bottom="10" />
+            </VBox.margin>
+        </TextField>
+
+        <Button text="Добавить животное" onAction="#saveAnimal">
+            <VBox.margin>
+                <Insets bottom="10" />
+            </VBox.margin>
+        </Button>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+    </VBox>
+</VBox>
